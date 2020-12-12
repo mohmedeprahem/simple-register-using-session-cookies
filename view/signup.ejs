@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add memder</title>
+</head>
+<body>
+  <form action="/signup" method="POST">
+    <label >name:</label>
+    <input type="text" name="name" ><br>
+    <% if(emailUsed){ %> 
+    <p>accout is already used</p>
+    <% } %>
+    <label >email:</label>
+    <input type="text" name="email" ><br>
+    <label >password:</label>
+    <input type="text" name="password" ><br>
+    <button type="submit">done</button>
+  </form>
+</body>
+</html>

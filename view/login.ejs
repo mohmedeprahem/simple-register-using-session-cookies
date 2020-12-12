@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add memder</title>
+</head>
+<body>
+  <% if(error){ %> 
+  <p>email or password false</p>
+  <% } %> 
+  <form action="/home" method="POST">
+    <label >email:</label>
+    <input type="text" name="email" ><br>
+    <label >password:</label>
+    <input type="text" name="password" ><br>
+    <button type="submit">login</button>
+  </form>
+  <form action="/signup" method="GET">  
+    <button type="submit">sign up</button>
+  </form>
+</body>
+</html>

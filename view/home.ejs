@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>add member</title>
+</head>
+<body>
+  <h3><%= user.member.nameAdmin %> </h3>
+  <form action="/home/add" method="POST">
+    <label >username:</label>
+    <input type="text" name="userName" ><br>
+    <label >email:</label>
+    <input type="text" name="email" ><br>
+    <button type="submit">add</button>
+  </form>
+  <form action="/logout" method="POST">
+    <button type="submit">logout</button>
+  </form>
+  <ul>
+    <% for(let m of user.member.member) { %> 
+      <li>
+        <h4><%= m.userName %> </h4>
+        <p><%= m.email %> </p>
+      </li>
+    <% } %> 
+  </ul>
+</body>
+</html>
